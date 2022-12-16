@@ -7,17 +7,20 @@ import { Flex, Spacer, Center,Box,ButtonGroup,Button ,  Menu,
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon,} from '@chakra-ui/react'
+    AccordionIcon,useDisclosure} from '@chakra-ui/react'
     import { FiSearch } from 'react-icons/fi';
     import { TbGridDots } from 'react-icons/tb';
     import { RiVipCrownFill } from 'react-icons/ri';
     import { GiHamburgerMenu } from 'react-icons/gi';
 
+    import React from 'react';
+
+
  
 
 export default function Navbar(){
 
-    
+  const { isOpen, onOpen, onClose } = useDisclosure()
 return(
     <>
     
@@ -28,7 +31,31 @@ return(
      <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} > Home</Center>
      <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} > TV Shows </Center>
      <Center  w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} >  Movies </Center>
-     <Center  w="20%" h="40px" fontSize='22px' mt='3px' > {<TbGridDots />} </Center>
+     {/* <Center  w="20%" h="40px" fontSize='22px' mt='3px'  > {} */}
+     <Menu isOpen={isOpen} >
+            <MenuButton
+                w="10%" h="40px" fontSize='22px' mt='10px'    
+                onMouseEnter={onOpen}
+                onMouseLeave={onClose}
+                bg="black"
+                color="white"
+                
+            >
+              <TbGridDots />
+            </MenuButton>
+            <MenuList mt='-10px' ml='-80px'  onMouseEnter={onOpen}
+                onMouseLeave={onClose} w="250px"  zIndex="2">
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white' >News</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white'>Live Tv</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white' >Shows</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white'>Music</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white' >Premium</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white'>Sport</MenuItem>
+                <MenuItem h='50px' _hover={{bg:"rgb(31,8,50)"}} bg='rgb(23,6,38)' color='white' >Kids</MenuItem>
+            </MenuList>
+        </Menu>
+
+
 
     </Flex>
 
@@ -62,16 +89,16 @@ return(
 
         <Menu mr='50px' >
         <MenuButton as={Button} bg='black' >
-           <GiHamburgerMenu fontSize='25px'  color='white' />
+           <GiHamburgerMenu fontSize='25px'  color='white'   />
         </MenuButton>
-      <MenuList w='330px' >
+      <MenuList w='330px' zIndex="2"  >
          <MenuItem bg='rgb(23,6,38)'   h='50px' borderBottom='3px solid gray' borderTop='3px solid gray' fontWeight='700' fontSize='17px' color='gray'  >Home</MenuItem>
          
-      <Accordion allowToggle  >
-       <AccordionItem > 
+      <Accordion allowToggle   >
+       <AccordionItem  > 
         <h2>
         <AccordionButton  h='50px' mt='-20px' bg='rgb(23,6,38)' borderBottom='3px solid gray'>
-         <Box as="span" flex='1' textAlign='left'fontWeight='700' color='gray' fontSize='17px'  >
+         <Box as="span" flex='1' textAlign='left'fontWeight='700' color='gray' fontSize='17px'   >
            Explore
          </Box>
        
@@ -131,7 +158,7 @@ return(
          <AccordionIcon />
         </AccordionButton>
         </h2>
-       <AccordionPanel  bg='rgb(23,6,38)' color='white' fontWeight='700'  >
+       <AccordionPanel  bg='rgb(23,6,38)' color='white' fontWeight='700' >
        <Center h='50px' _hover={{bg:"rgb(31,8,50)"}} >About us</Center>
        <Center h='50px' _hover={{bg:"rgb(31,8,50)"}} >Help Center</Center>
        <Center h='50px' _hover={{bg:"rgb(31,8,50)"}} >Term & Condition</Center>

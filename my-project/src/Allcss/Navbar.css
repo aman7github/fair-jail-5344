@@ -1,0 +1,14 @@
+/* .search{
+    width: 100px;
+    height: 120px;
+    border-color: rgb(130,48,198);
+} */
+
+.searchbar{
+    height:40px;
+     width:100%;
+      background-color:black;
+       color:white;
+        border:1px solid gray;
+        border-radius:5px;
+}

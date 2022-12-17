@@ -14,6 +14,7 @@ import { Flex, Spacer, Center,Box,ButtonGroup,Button ,  Menu,
     import { GiHamburgerMenu } from 'react-icons/gi';
 
     import React from 'react';
+    import "../Allcss/Navbar.css"
 
 
  
@@ -21,6 +22,13 @@ import { Flex, Spacer, Center,Box,ButtonGroup,Button ,  Menu,
 export default function Navbar(){
 
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const ref = React.useRef(null)
+ 
+  // const Search=()=>{
+  //   ref.current.classList.add("search")
+   
+  // }
+
 return(
     <>
     
@@ -69,7 +77,7 @@ return(
              />
       
           
-           <Input h="40px" w="100%" bg='black' color='white' border='1px solid gray' borderRadius='5px'  />
+           <Input className='searchbar' ref={ref}  />
   </InputGroup>
          
          

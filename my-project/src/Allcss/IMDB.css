@@ -20,7 +20,7 @@
 .pre-btn2,.next-btn2{
     position: absolute;
     border: none;
-    margin-top: 130px;
+    margin-top: 20px;
     width: 50px;
     height: 12%;
     display: flex;
@@ -29,10 +29,14 @@
     font-size: 40px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.502);
-    color:white
+    color:white;
+    z-index: 10;
 }
 .next-btn2{
     right: 0;
+}
+.pre-btn2{
+    left: 0;
 }
 
 .htag{

@@ -1,5 +1,5 @@
 
-
+import {Link} from "react-router-dom"
 import { Flex, Spacer, Center,Box,ButtonGroup,Button ,  Menu,
     MenuButton,
     MenuList,
@@ -36,7 +36,9 @@ return(
     
     <Flex  w="30%" justifyContent="center" alignItems="center"  >
      <Center  w="20%" h="40px" > </Center>
-     <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} > Home</Center>
+     <Link to="/" >
+     <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} style={{color:"white",textDecoration: 'none'}}> Home</Center>
+     </Link>
      <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} > TV Shows </Center>
      <Center  w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} >  Movies </Center>
      {/* <Center  w="20%" h="40px" fontSize='22px' mt='3px'  > {} */}
@@ -88,8 +90,9 @@ return(
 
         <Flex  w="26%" justifyContent="space-between" >
         <ButtonGroup gap='10px' ml='30px'>
-         
+         <Link to="/login" >
           <Button bg='black' color='white' fontWeight='600' h='40px' p='0 15px 0 15px' borderRadius="4px" borderColor="white" border='1px solid white'  mt='15px'  >Log in</Button>
+          </Link>
           <Button gap="10px" fontWeight='600' h='40px' p='0 15px 0 15px' borderRadius="4px" border='none' bg='rgb(130,48,198)' color='white' mt='15px' >  <RiVipCrownFill fontSize='20px'  /> Buy Plan</Button>
 
         </ButtonGroup>

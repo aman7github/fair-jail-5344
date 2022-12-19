@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from "./Card"
-import "../Allcss/IMDB.css"
+import "../Allcss/Trending2.css"
 
 
 
@@ -47,13 +47,13 @@ const Pics = [
    
 <>
 
-<div> <h3 className='htag' >IMBD Top Picks</h3></div>
+<div> <h3   className='htag2' >IMBD Top Picks</h3></div>
 
-<div className='container'  >
+<div   className='container2' >
    <button className='pre-btn2'  onClick={prebtn2}  > <p>&lt;</p> </button>
    <button className='next-btn2' onClick={nextbtn2} > <p>&gt;</p> </button>
 
-   <div className='card-container' ref={ref} >
+   <div   className='card-container2' ref={ref} >
     {  Pics.map((el)=>(
       <Card key={el.id}  src={el.img} />
     ))}

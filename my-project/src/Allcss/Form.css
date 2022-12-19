@@ -1,0 +1,84 @@
+
+.maindiv{
+    /* border:1px solid white; */
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin:auto
+}
+.maindiv2{
+    /* border:1px solid white; */
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 100px auto auto auto;
+  
+}
+
+.div{
+    color:white;
+    width: 250px;
+}
+
+
+.form{
+    color:white;
+    /* border: 1px solid white; */
+    height: 500px;
+    width:220px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -45px;
+}
+.label{
+    /* border: 1px solid white; */
+    width:200px;
+    text-align: start;
+    font-size: 18px;
+    /* margin: 0 0 -20px -90px; */
+}
+.input{
+  
+    width: 280px;
+    height: 25px;
+    margin: 4px 0 0 -2px;
+}
+   
+.submit{
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    border:1px solid white;
+    margin:0 0 0 100px;
+}
+.submit:hover{
+   background-color: white;
+   color:black;
+}
+
+.P-error{
+    font-size: 13px;
+    color:red;
+    margin: 2px 0  0 -62px;
+    display: none;
+}
+.Show-P-error{
+    display: block;
+}
+
+.Ptagforsignup{
+    width: 250px;
+  color:white;
+  margin: -260px 0 0 30px;
+  text-decoration: none;
+
+}

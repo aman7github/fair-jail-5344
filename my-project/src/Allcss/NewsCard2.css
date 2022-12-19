@@ -1,0 +1,83 @@
+
+.Newscontainer2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  height: 250px;
+  margin-left: 40px;
+}
+
+.Newscards2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    max-width: 350px;
+    height: 200px;
+    margin: -1px 0 0 0;
+}
+
+.Newscards2>img{
+    width: 90%;
+    height: 300px;
+  border-radius: 9px;
+}
+.Newscards2>img:hover{
+   width: 380px;
+    height: 300px;
+    border: 8px solid white;
+    cursor: pointer;
+   
+}
+.Newscards2:hover{
+    z-index: 5;
+}
+
+
+
+.NewscardInsideDiv3{
+    background-color: white;
+    width: 380px;
+    height: 70px;
+    display: none;
+    margin-top: -60px;
+    border-bottom: 15px solid white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.NewscardInsideDivOnJs2{
+    display: block;
+}
+
+
+.NewscardInsideBtn2{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color:gray;
+    margin: 20px 0 0 -210px;
+}
+.NewscardInsideBtn2:hover{
+    color:white;
+    background-color: rgb(130,48,198);
+}
+
+
+.Newsptag2{
+    width:70px;
+    margin-left: 5px;
+    font-size: 14px;
+    margin: -25px 0 0 280px;
+    color:gray;
+}
+
+.icon2{
+    margin:0 1px 0 0;
+    color:gray;
+}

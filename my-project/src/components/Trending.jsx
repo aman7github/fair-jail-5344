@@ -1,6 +1,8 @@
 import React from 'react'
-import Card from "./Card"
-import "../Allcss/Trending.css"
+
+import Card from "../components/Card"
+// import "../Allcss/Trending.css"
+import "../Allcss/Trending2.css"
 
 
 const Trending = () => {
@@ -39,13 +41,13 @@ const Trending = () => {
   return (
     <>
     
-    <div> <h3 className='htag' >Trending Near You</h3></div>
+    <div  className='htag2' > <h3  >Trending Near You</h3></div>
 
-    <div className='container'  >
-       <button className='pre-btn'  onClick={prebtn}  > <p>&lt;</p> </button>
-       <button className='next-btn' onClick={nextbtn} > <p>&gt;</p> </button>
+    <div    className='container2' >
+       <button className='pre-btn2' onClick={prebtn}  > <p>&lt;</p> </button>
+       <button className='next-btn2' onClick={nextbtn} > <p>&gt;</p> </button>
 
-       <div className='card-container' ref={ref}>
+       <div  className='card-container2' ref={ref}>
         {  Pics.map((el)=>(
           <Card key={el.id}  src={el.img} />
         ))}

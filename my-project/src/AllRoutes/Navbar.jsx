@@ -35,9 +35,9 @@ return(
     <Flex w="100%"  h="70px" justifyContent="space-around" bg='black' color='white' >
     
     <Flex  w="30%" justifyContent="center" alignItems="center"  >
-     <Center  w="20%" h="40px" > </Center>
+     <Center  w="20%" h="40px"  style={{fontWeight:"800", color:"red", marginLeft:"-15px", fontSize:"25px"}} > Zee</Center>
      <Link to="/" >
-     <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} style={{color:"white",textDecoration: 'none'}}> Home</Center>
+     <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} style={{color:"white",textDecoration: 'none' , marginLeft:"20px"}}> Home</Center>
      </Link>
      <Center   w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} > TV Shows </Center>
      <Center  w="20%" h="40px" _hover={{borderBottom:"3px solid white"}} >  Movies </Center>

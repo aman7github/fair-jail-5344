@@ -1,8 +1,9 @@
 
 
 import React from "react"
-import '../Allcss/Form.css'
+
 import {Link, useNavigate} from "react-router-dom"
+import "../Allcss/Form.css"
 
  
  const Login = () => {
@@ -51,7 +52,7 @@ import {Link, useNavigate} from "react-router-dom"
      <>
      <div className="maindiv2"  >
      <div className="div"  >
-      <h2>Enter for Login</h2>
+      <h2  className="h2" >Enter for Login</h2>
      </div>
     
     <form className="form"  onSubmit={handlesubmit} >

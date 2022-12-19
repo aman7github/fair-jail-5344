@@ -25,7 +25,9 @@
     color:white;
     width: 250px;
 }
-
+.div>h2{
+    width: 250px;
+}
 
 .form{
     color:white;
@@ -80,5 +82,6 @@
   color:white;
   margin: -260px 0 0 30px;
   text-decoration: none;
+  
 
 }
